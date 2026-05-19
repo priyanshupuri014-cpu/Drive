@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html -->
+<html lang="en" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prashant Driving School — Learn Driving With Confidence &amp; Safety</title>
+<meta name="description" content="Prashant Driving School offers premium driving lessons in Mumbai. Certified instructors, flexible timings, and safe training vehicles. Book your class today.">
+<meta name="keywords" content="driving school near me, best driving school Mumbai, car driving classes, driving lessons, driving training institute">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Prashant Driving School — Learn Driving With Confidence &amp; Safety_files/css2" rel="stylesheet">
+<script src="./Prashant Driving School — Learn Driving With Confidence &amp; Safety_files/gsap.min.js.download"></script>
+<script src="./Prashant Driving School — Learn Driving With Confidence &amp; Safety_files/ScrollTrigger.min.js.download"></script>
+<style>
+:root{
+  --white:#FFFFFF;
+  --trust-blue:#E3F2FD;
+  --nature-green:#A8E6CF;
+  --deep-slate:#2D3436;
+  --gold:#FFF9E1;
+  --slate-mid:#4a5568;
+  --slate-light:#718096;
+  --border:#e8ecf0;
+  --shadow-sm:0 2px 12px rgba(45,52,54,.06);
+  --shadow-md:0 8px 40px rgba(45,52,54,.1);
+  --shadow-lg:0 24px 80px rgba(45,52,54,.14);
+  --glass:rgba(255,255,255,.72);
+  --glass-border:rgba(255,255,255,.9);
+  --radius-sm:12px;
+  --radius-md:20px;
+  --radius-lg:32px;
+  --font-display:'Sora',sans-serif;
+  --font-body:'Manrope',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--deep-slate);background:var(--white);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#c1cdd8;border-radius:4px}
+
+/* ─── NAVBAR ─── */
+#navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:20px 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:all .5s cubic-bezier(.16,1,.3,1);
+}
+#navbar.scrolled{
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(232,236,240,.8);
+  padding:14px 48px;
+  box-shadow:0 4px 24px rgba(45,52,54,.06);
+}
+.nav-logo{
+  font-family:var(--font-display);font-size:1.25rem;font-weight:700;
+  color:var(--white);letter-spacing:-.02em;
+  transition:color .4s ease;display:flex;align-items:center;gap:10px;
+}
+.nav-logo .logo-dot{
+  width:8px;height:8px;border-radius:50%;background:var(--nature-green);
+  display:inline-block;box-shadow:0 0 12px rgba(168,230,207,.8);
+}
+#navbar.scrolled .nav-logo{color:var(--deep-slate)}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none}
+.nav-links a{
+  font-size:.875rem;font-weight:500;color:rgba(255,255,255,.85);
+  text-decoration:none;letter-spacing:.01em;
+  transition:color .3s ease;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;
+  background:var(--nature-green);transition:width .3s ease;
+}
+.nav-links a:hover::after{width:100%}
+#navbar.scrolled .nav-links a{color:var(--slate-mid)}
+#navbar.scrolled .nav-links a:hover{color:var(--deep-slate)}
+.nav-wa{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.3);
+  backdrop-filter:blur(12px);
+  color:#fff;font-size:.8rem;font-weight:600;
+  padding:10px 20px;border-radius:100px;
+  text-decoration:none;
+  transition:all .3s ease;letter-spacing:.03em;
+}
+.nav-wa:hover{background:rgba(255,255,255,.25);transform:translateY(-1px)}
+#navbar.scrolled .nav-wa{
+  background:#25D366;border-color:#25D366;color:#fff;
+}
+.nav-wa svg{width:16px;height:16px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:all .3s ease}
+#navbar.scrolled .hamburger span{background:var(--deep-slate)}
+
+/* ─── HERO ─── */
+#hero{
+  position:relative;min-height:100vh;
+  display:flex;align-items:center;overflow:hidden;
+}
+#hero-video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;z-index:0;
+}
+.hero-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(
+    135deg,
+    rgba(20,28,35,.75) 0%,
+    rgba(20,28,35,.45) 50%,
+    rgba(20,28,35,.3) 100%
+  );
+}
+.hero-glow{
+  position:absolute;top:30%;left:10%;z-index:1;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(168,230,207,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:1400px;margin:0 auto;padding:0 48px;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+  width:100%;
+}
+.hero-left{}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(168,230,207,.15);
+  border:1px solid rgba(168,230,207,.3);
+  backdrop-filter:blur(12px);
+  color:var(--nature-green);font-size:.75rem;font-weight:600;
+  padding:8px 16px;border-radius:100px;letter-spacing:.08em;text-transform:uppercase;
+  margin-bottom:28px;opacity:0;transform:translateY(20px);
+}
+.hero-eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--nature-green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.hero-h1{
+  font-family:var(--font-display);
+  font-size:clamp(2.6rem,5vw,4.2rem);font-weight:800;
+  line-height:1.05;letter-spacing:-.04em;color:#fff;
+  margin-bottom:24px;opacity:0;transform:translateY(30px);
+}
+.hero-h1 .accent{
+  background:linear-gradient(135deg,#A8E6CF,#7ED4B5);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{
+  font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.7;
+  max-width:440px;margin-bottom:40px;font-weight:400;
+  opacity:0;transform:translateY(20px);
+}
+.hero-btns{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  opacity:0;transform:translateY(20px);
+}
+.btn-primary{
+  background:var(--nature-green);color:var(--deep-slate);
+  font-family:var(--font-display);font-size:.875rem;font-weight:700;
+  padding:16px 32px;border-radius:100px;border:none;cursor:pointer;
+  text-decoration:none;letter-spacing:.01em;
+  transition:all .4s cubic-bezier(.16,1,.3,1);
+  box-shadow:0 8px 32px rgba(168,230,207,.4);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 16px 48px rgba(168,230,207,.5)}
+.btn-ghost{
+  background:rgba(255,255,255,.1);color:#fff;
+  border:1px solid rgba(255,255,255,.25);
+  font-family:var(--font-display);font-size:.875rem;font-weight:600;
+  padding:15px 28px;border-radius:100px;cursor:pointer;
+  text-decoration:none;letter-spacing:.01em;backdrop-filter:blur(12px);
+  transition:all .3s ease;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.hero-right{display:flex;flex-direction:column;gap:16px;opacity:0;transform:translateX(40px)}
+.hero-card{
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-radius:var(--radius-md);
+  padding:20px 24px;
+  box-shadow:var(--shadow-md);
+  display:flex;align-items:center;gap:16px;
+  transition:transform .3s ease;
+}
+.hero-card:hover{transform:translateY(-3px)}
+.hero-card-icon{
+  width:48px;height:48px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:1.3rem;
+}
+.hero-card-icon.blue{background:var(--trust-blue)}
+.hero-card-icon.green{background:rgba(168,230,207,.3)}
+.hero-card-icon.gold{background:var(--gold)}
+.hero-card-label{font-size:.7rem;color:var(--slate-light);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.hero-card-val{font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--deep-slate);line-height:1.1}
+.hero-card-sub{font-size:.78rem;color:var(--slate-mid);margin-top:2px}
+.hero-stars{display:flex;gap:2px;margin-top:4px}
+.hero-stars span{color:#F59E0B;font-size:.85rem}
+.hero-card-float1{animation:float1 4s ease-in-out infinite}
+.hero-card-float2{animation:float2 5s ease-in-out infinite .5s}
+.hero-card-float3{animation:float3 4.5s ease-in-out infinite 1s}
+@keyframes float1{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes float3{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.hero-scroll{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:rgba(255,255,255,.6);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+  animation:scrollBounce 2.5s ease-in-out infinite;
+}
+.hero-scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.6),transparent)}
+@keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+/* ─── TRUST SECTION ─── */
+#trust{
+  padding:100px 48px;
+  background:linear-gradient(180deg,#f8fafc 0%,var(--white) 100%);
+}
+.section-center{text-align:center;margin-bottom:64px}
+.section-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--slate-light);margin-bottom:16px;
+}
+.section-tag::before,.section-tag::after{content:'';display:block;width:24px;height:1px;background:var(--border)}
+.section-h2{
+  font-family:var(--font-display);
+  font-size:clamp(1.9rem,4vw,3rem);font-weight:800;
+  letter-spacing:-.03em;line-height:1.1;color:var(--deep-slate);
+  margin-bottom:16px;
+}
+.section-sub{color:var(--slate-mid);font-size:1rem;max-width:520px;margin:0 auto;line-height:1.7}
+.trust-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:20px;
+}
+.trust-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:32px 24px;text-align:center;
+  transition:all .4s cubic-bezier(.16,1,.3,1);
+  position:relative;overflow:hidden;
+}
+.trust-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--trust-blue),transparent);
+  opacity:0;transition:opacity .3s ease;
+}
+.trust-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent}
+.trust-card:hover::before{opacity:1}
+.trust-card-icon{
+  width:56px;height:56px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 16px;font-size:1.5rem;
+  position:relative;z-index:1;
+}
+.trust-card-num{
+  font-family:var(--font-display);font-size:1.9rem;font-weight:800;
+  color:var(--deep-slate);letter-spacing:-.03em;margin-bottom:6px;
+  position:relative;z-index:1;
+}
+.trust-card-label{font-size:.82rem;color:var(--slate-mid);font-weight:500;position:relative;z-index:1}
+
+/* ─── ABOUT ─── */
+#about{
+  padding:120px 48px;
+  background:var(--white);
+  max-width:1400px;margin:0 auto;
+}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.about-visual{position:relative}
+.about-img-main{
+  width:100%;border-radius:var(--radius-lg);
+  overflow:hidden;aspect-ratio:4/5;
+  background:linear-gradient(135deg,#E3F2FD 0%,#A8E6CF 100%);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;box-shadow:var(--shadow-lg);
+}
+.about-img-main svg{width:60%;opacity:.4}
+.about-img-badge{
+  position:absolute;bottom:-24px;right:-24px;
+  background:var(--white);border-radius:var(--radius-md);
+  padding:20px 24px;box-shadow:var(--shadow-md);border:1px solid var(--border);
+  z-index:2;
+}
+.about-img-badge-num{
+  font-family:var(--font-display);font-size:2.2rem;font-weight:800;
+  color:var(--deep-slate);line-height:1;
+}
+.about-img-badge-label{font-size:.78rem;color:var(--slate-mid);margin-top:4px}
+.about-img-accent{
+  position:absolute;top:-20px;left:-20px;
+  width:120px;height:120px;border-radius:24px;
+  background:linear-gradient(135deg,var(--trust-blue),var(--nature-green));
+  opacity:.5;z-index:0;
+}
+.about-text{}
+.about-h2{
+  font-family:var(--font-display);
+  font-size:clamp(2rem,3.5vw,3rem);font-weight:800;
+  letter-spacing:-.03em;line-height:1.1;color:var(--deep-slate);
+  margin-bottom:20px;
+}
+.about-p{color:var(--slate-mid);line-height:1.8;margin-bottom:16px;font-size:.98rem}
+.about-divider{width:48px;height:3px;background:linear-gradient(90deg,var(--nature-green),var(--trust-blue));border-radius:2px;margin:28px 0}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.about-feat{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:16px;border-radius:var(--radius-sm);
+  background:#f8fafc;border:1px solid var(--border);
+  transition:all .3s ease;
+}
+.about-feat:hover{background:var(--trust-blue);border-color:transparent}
+.about-feat-icon{font-size:1.1rem;margin-top:2px}
+.about-feat-title{font-size:.85rem;font-weight:700;color:var(--deep-slate);margin-bottom:2px}
+.about-feat-desc{font-size:.78rem;color:var(--slate-light)}
+
+/* ─── COURSES ─── */
+#courses{
+  padding:120px 48px;
+  background:linear-gradient(180deg,#f8fafc 0%,var(--white) 100%);
+}
+.courses-wrap{max-width:1300px;margin:0 auto}
+.courses-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  margin-top:60px;
+}
+.course-card{
+  border-radius:var(--radius-lg);overflow:hidden;
+  background:var(--white);border:1px solid var(--border);
+  transition:all .5s cubic-bezier(.16,1,.3,1);
+  position:relative;cursor:pointer;
+}
+.course-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(227,242,253,.6),rgba(168,230,207,.3));
+  opacity:0;transition:opacity .4s ease;z-index:0;
+}
+.course-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:var(--shadow-lg);border-color:transparent}
+.course-card:hover::before{opacity:1}
+.course-card-top{
+  padding:36px 32px 28px;position:relative;z-index:1;
+}
+.course-num{
+  font-family:var(--font-display);font-size:.7rem;font-weight:700;
+  color:var(--slate-light);letter-spacing:.1em;margin-bottom:16px;
+  text-transform:uppercase;
+}
+.course-icon{
+  width:56px;height:56px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:20px;
+}
+.course-title{
+  font-family:var(--font-display);font-size:1.2rem;font-weight:700;
+  color:var(--deep-slate);margin-bottom:10px;letter-spacing:-.02em;
+}
+.course-desc{font-size:.85rem;color:var(--slate-mid);line-height:1.65}
+.course-card-bottom{
+  border-top:1px solid var(--border);
+  padding:20px 32px;display:flex;align-items:center;justify-content:space-between;
+  position:relative;z-index:1;background:rgba(255,255,255,.7);
+}
+.course-duration{font-size:.78rem;color:var(--slate-light);font-weight:500}
+.course-arrow{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--deep-slate);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;transition:all .3s ease;
+}
+.course-card:hover .course-arrow{background:var(--nature-green);color:var(--deep-slate);transform:translateX(3px)}
+
+/* ─── WHY CHOOSE ─── */
+#why{padding:120px 48px;background:var(--deep-slate);position:relative;overflow:hidden}
+.why-bg-glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:800px;height:800px;border-radius:50%;
+  background:radial-gradient(circle,rgba(168,230,207,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.why-wrap{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px}
+.why-left{}
+.why-item{
+  border-bottom:1px solid rgba(255,255,255,.08);
+  padding:28px 0;display:flex;gap:24px;align-items:flex-start;
+  transition:all .3s ease;
+}
+.why-item:first-child{padding-top:0}
+.why-item:last-child{border-bottom:none}
+.why-item:hover{padding-left:8px}
+.why-item-num{
+  font-family:var(--font-display);font-size:.7rem;font-weight:700;
+  color:var(--nature-green);letter-spacing:.1em;margin-top:4px;flex-shrink:0;
+}
+.why-item-title{
+  font-family:var(--font-display);font-size:1.05rem;font-weight:700;
+  color:#fff;margin-bottom:8px;letter-spacing:-.01em;
+}
+.why-item-desc{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.65}
+.why-right{}
+.why-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.why-stat{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius-md);
+  padding:32px 24px;
+  transition:all .4s ease;
+}
+.why-stat:hover{background:rgba(168,230,207,.08);border-color:rgba(168,230,207,.2);transform:translateY(-4px)}
+.why-stat-num{
+  font-family:var(--font-display);font-size:2.4rem;font-weight:800;
+  color:var(--nature-green);letter-spacing:-.04em;line-height:1;margin-bottom:8px;
+}
+.why-stat-label{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.5}
+/* why section title styling */
+#why .section-tag{color:rgba(255,255,255,.4)}
+#why .section-tag::before,#why .section-tag::after{background:rgba(255,255,255,.15)}
+#why .section-h2{color:#fff}
+#why .section-sub{color:rgba(255,255,255,.5)}
+
+/* ─── GALLERY ─── */
+#gallery{padding:120px 48px;background:var(--white)}
+.gallery-wrap{max-width:1300px;margin:0 auto}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-auto-rows:80px;
+  gap:16px;margin-top:60px;
+}
+.gallery-item{
+  border-radius:var(--radius-md);overflow:hidden;
+  position:relative;cursor:pointer;
+}
+.gallery-item:nth-child(1){grid-column:span 5;grid-row:span 4}
+.gallery-item:nth-child(2){grid-column:span 4;grid-row:span 2}
+.gallery-item:nth-child(3){grid-column:span 3;grid-row:span 2}
+.gallery-item:nth-child(4){grid-column:span 4;grid-row:span 2}
+.gallery-item:nth-child(5){grid-column:span 3;grid-row:span 2}
+.gallery-item:nth-child(6){grid-column:span 4;grid-row:span 3}
+.gallery-item:nth-child(7){grid-column:span 3;grid-row:span 3}
+.gallery-inner{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .6s cubic-bezier(.16,1,.3,1);
+  font-size:2rem;
+}
+.gallery-item:hover .gallery-inner{transform:scale(1.08)}
+.gallery-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(45,52,54,.7) 0%,transparent 60%);
+  opacity:0;transition:opacity .3s ease;
+  display:flex;align-items:flex-end;padding:20px;
+}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.gallery-label{color:#fff;font-size:.82rem;font-weight:600}
+.g-blue{background:linear-gradient(135deg,#E3F2FD,#BBDEFB)}
+.g-green{background:linear-gradient(135deg,#A8E6CF,#81C995)}
+.g-gold{background:linear-gradient(135deg,#FFF9E1,#FFE082)}
+.g-slate{background:linear-gradient(135deg,#f1f5f9,#e2e8f0)}
+.g-mint{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}
+.g-warm{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}
+.g-sky{background:linear-gradient(135deg,#e0f2fe,#bae6fd)}
+
+/* ─── TESTIMONIALS ─── */
+#testimonials{
+  padding:120px 48px;
+  background:linear-gradient(135deg,var(--trust-blue) 0%,var(--gold) 100%);
+}
+.testi-wrap{max-width:1200px;margin:0 auto}
+.testi-slider{
+  display:flex;gap:24px;margin-top:60px;
+  overflow-x:auto;scrollbar-width:none;padding-bottom:8px;
+  scroll-snap-type:x mandatory;
+}
+.testi-slider::-webkit-scrollbar{display:none}
+.testi-card{
+  min-width:380px;background:var(--white);
+  border-radius:var(--radius-lg);padding:36px;
+  box-shadow:var(--shadow-sm);border:1px solid rgba(255,255,255,.8);
+  scroll-snap-align:start;flex-shrink:0;
+  transition:all .4s ease;
+}
+.testi-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.testi-quote{font-size:2.4rem;color:var(--nature-green);line-height:1;margin-bottom:16px;font-family:Georgia,serif}
+.testi-text{font-size:.92rem;color:var(--slate-mid);line-height:1.75;margin-bottom:24px}
+.testi-author{display:flex;align-items:center;gap:14px}
+.testi-avatar{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.9rem;color:var(--white);flex-shrink:0;
+}
+.testi-name{font-weight:700;font-size:.88rem;color:var(--deep-slate)}
+.testi-role{font-size:.75rem;color:var(--slate-light)}
+.testi-stars{display:flex;gap:2px;margin-top:4px}
+.testi-stars span{color:#F59E0B;font-size:.8rem}
+.testi-nav{display:flex;gap:12px;justify-content:center;margin-top:40px}
+.testi-btn{
+  width:44px;height:44px;border-radius:50%;border:none;
+  background:var(--white);color:var(--deep-slate);cursor:pointer;
+  font-size:1rem;box-shadow:var(--shadow-sm);
+  transition:all .3s ease;display:flex;align-items:center;justify-content:center;
+}
+.testi-btn:hover{background:var(--deep-slate);color:#fff;transform:scale(1.05)}
+
+/* ─── VEHICLES ─── */
+#vehicles{padding:120px 48px;background:var(--white)}
+.vehicles-wrap{max-width:1200px;margin:0 auto}
+.vehicles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+.vehicle-card{
+  border-radius:var(--radius-lg);overflow:hidden;
+  background:linear-gradient(135deg,#f8fafc,var(--white));
+  border:1px solid var(--border);transition:all .4s ease;
+}
+.vehicle-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--nature-green)}
+.vehicle-visual{
+  height:160px;display:flex;align-items:center;justify-content:center;
+  font-size:3.5rem;background:linear-gradient(135deg,#E3F2FD,#A8E6CF);
+  position:relative;overflow:hidden;
+}
+.vehicle-visual::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.4) 0%,transparent 70%);
+}
+.vehicle-body{padding:28px}
+.vehicle-name{
+  font-family:var(--font-display);font-size:1.1rem;font-weight:700;
+  color:var(--deep-slate);margin-bottom:6px;
+}
+.vehicle-type{font-size:.78rem;color:var(--slate-light);margin-bottom:16px}
+.vehicle-tags{display:flex;flex-wrap:wrap;gap:8px}
+.vehicle-tag{
+  background:var(--trust-blue);color:var(--slate-mid);
+  font-size:.7rem;font-weight:600;padding:5px 12px;border-radius:100px;
+  letter-spacing:.03em;
+}
+
+/* ─── FAQ ─── */
+#faq{
+  padding:120px 48px;
+  background:linear-gradient(180deg,#f8fafc 0%,var(--white) 100%);
+}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);overflow:hidden}
+.faq-q{
+  width:100%;background:none;border:none;cursor:pointer;
+  padding:28px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-family:var(--font-body);font-size:1rem;font-weight:600;
+  color:var(--deep-slate);text-align:left;letter-spacing:-.01em;
+}
+.faq-icon{
+  width:32px;height:32px;border-radius:50%;border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-size:.8rem;transition:all .3s ease;color:var(--slate-mid);
+}
+.faq-item.open .faq-icon{background:var(--deep-slate);border-color:var(--deep-slate);color:#fff;transform:rotate(45deg)}
+.faq-a{
+  font-size:.9rem;color:var(--slate-mid);line-height:1.75;
+  max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;
+}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:24px}
+
+/* ─── CONTACT ─── */
+#contact{padding:120px 48px;background:var(--white)}
+.contact-wrap{max-width:1200px;margin:0 auto}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px;align-items:start}
+.contact-info{}
+.contact-info-item{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:20px 0;border-bottom:1px solid var(--border);
+}
+.contact-info-item:last-child{border-bottom:none}
+.contact-info-icon{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--trust-blue);display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+}
+.contact-info-label{font-size:.72rem;font-weight:700;color:var(--slate-light);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.contact-info-val{font-size:.95rem;font-weight:600;color:var(--deep-slate)}
+.contact-map{
+  width:100%;height:220px;border-radius:var(--radius-md);
+  background:linear-gradient(135deg,#E3F2FD,#A8E6CF);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.5rem;margin-top:24px;border:1px solid var(--border);
+  position:relative;overflow:hidden;
+}
+.contact-map-label{
+  position:absolute;bottom:16px;left:16px;
+  background:var(--white);padding:8px 14px;border-radius:100px;
+  font-size:.78rem;font-weight:600;color:var(--deep-slate);
+  box-shadow:var(--shadow-sm);
+}
+.contact-form-wrap{}
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-label{font-size:.78rem;font-weight:600;color:var(--deep-slate);letter-spacing:.03em}
+.form-input,.form-select,.form-textarea{
+  width:100%;padding:14px 18px;
+  border:1.5px solid var(--border);border-radius:var(--radius-sm);
+  background:var(--white);color:var(--deep-slate);
+  font-family:var(--font-body);font-size:.9rem;
+  outline:none;transition:all .3s ease;resize:none;
+}
+.form-input:focus,.form-select:focus,.form-textarea:focus{
+  border-color:var(--nature-green);
+  box-shadow:0 0 0 4px rgba(168,230,207,.2);
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-submit{
+  background:var(--deep-slate);color:#fff;
+  border:none;border-radius:100px;padding:16px 32px;
+  font-family:var(--font-display);font-size:.9rem;font-weight:700;
+  cursor:pointer;transition:all .3s ease;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.form-submit:hover{background:var(--nature-green);color:var(--deep-slate);transform:translateY(-2px)}
+.wa-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:#25D366;color:#fff;
+  border:none;border-radius:100px;padding:16px 32px;
+  font-family:var(--font-display);font-size:.9rem;font-weight:700;
+  cursor:pointer;transition:all .3s ease;text-decoration:none;margin-top:8px;
+}
+.wa-btn:hover{background:#128C7E;transform:translateY(-2px);box-shadow:0 8px 32px rgba(37,211,102,.3)}
+
+/* ─── FOOTER ─── */
+#footer{
+  background:var(--deep-slate);
+  padding:80px 48px 40px;
+}
+.footer-top{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;
+  padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-brand{}
+.footer-logo{
+  font-family:var(--font-display);font-size:1.3rem;font-weight:800;
+  color:#fff;letter-spacing:-.02em;margin-bottom:16px;
+  display:flex;align-items:center;gap:10px;
+}
+.footer-brand-desc{font-size:.85rem;color:rgba(255,255,255,.45);line-height:1.7;max-width:280px}
+.footer-socials{display:flex;gap:10px;margin-top:24px}
+.footer-social{
+  width:36px;height:36px;border-radius:10px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.4);font-size:.85rem;text-decoration:none;
+  transition:all .3s ease;
+}
+.footer-social:hover{background:rgba(168,230,207,.15);border-color:rgba(168,230,207,.3);color:var(--nature-green)}
+.footer-col{}
+.footer-col-title{
+  font-size:.7rem;font-weight:700;color:rgba(255,255,255,.4);
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;
+}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{
+  font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;
+  transition:color .2s ease;
+}
+.footer-links a:hover{color:#fff}
+.footer-bottom{
+  max-width:1200px;margin:0 auto;padding-top:32px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.3)}
+.footer-badge{
+  display:flex;align-items:center;gap:6px;
+  font-size:.75rem;color:rgba(255,255,255,.3);
+}
+.footer-badge-dot{width:5px;height:5px;border-radius:50%;background:var(--nature-green)}
+
+/* ─── MOBILE MENU ─── */
+.mobile-menu{
+  position:fixed;inset:0;z-index:999;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(24px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;
+  opacity:0;pointer-events:none;transition:opacity .4s ease;
+}
+.mobile-menu.open{opacity:1;pointer-events:all}
+.mobile-menu a{
+  font-family:var(--font-display);font-size:1.4rem;font-weight:700;
+  color:var(--deep-slate);text-decoration:none;letter-spacing:-.02em;
+}
+.mobile-menu-close{
+  position:absolute;top:24px;right:24px;
+  background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--deep-slate);
+}
+
+/* ─── ANIMATIONS INIT ─── */
+.reveal{opacity:0;transform:translateY(30px)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .hero-content{grid-template-columns:1fr;gap:48px;padding:0 32px}
+  .hero-right{flex-direction:row;flex-wrap:wrap}
+  .hero-card{min-width:200px;flex:1}
+  .about-grid{grid-template-columns:1fr;gap:48px;padding:0 32px}
+  .about-visual{order:-1}
+  .trust-grid{grid-template-columns:repeat(3,1fr)}
+  .courses-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr;gap:48px}
+  .vehicles-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr;gap:48px}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  #navbar{padding:16px 24px}
+  #navbar.scrolled{padding:12px 24px}
+  .nav-links{display:none}
+  .nav-wa{display:none}
+  .hamburger{display:flex}
+  #trust,#about,#courses,#why,#gallery,#testimonials,#vehicles,#faq,#contact,#footer{padding:80px 24px}
+  #about{padding:80px 24px}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .courses-grid{grid-template-columns:1fr}
+  .why-stats{grid-template-columns:1fr 1fr}
+  .vehicles-grid{grid-template-columns:1fr}
+  .gallery-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:120px}
+  .gallery-item{grid-column:auto!important;grid-row:auto!important}
+  .testi-card{min-width:300px}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center}
+  .hero-h1{font-size:2.2rem}
+  .about-feats{grid-template-columns:1fr}
+  .footer-col-title{margin-top:16px}
+}
+@media(max-width:480px){
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .hero-btns{flex-direction:column}
+  .hero-right{display:none}
+}
+</style>
+</head>
+<body style="">
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="menuClose">✕</button>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#hero" onclick="closeMobile()">Home</a>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#about" onclick="closeMobile()">About</a>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses" onclick="closeMobile()">Courses</a>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#contact" onclick="closeMobile()">Contact</a>
+  <a href="https://wa.me/919876543210" class="btn-primary" style="margin-top:8px">WhatsApp Us</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="">
+  <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#hero" class="nav-logo">
+    <span class="logo-dot"></span>
+    Prashant Driving School
+  </a>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#about">About</a></li>
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Courses</a></li>
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#gallery">Gallery</a></li>
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#testimonials">Reviews</a></li>
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#faq">FAQ</a></li>
+    <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/919876543210" class="nav-wa" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 0C5.373 0 0 5.373 0 12c0 2.14.564 4.144 1.549 5.88L0 24l6.305-1.519A11.959 11.959 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.813 9.813 0 01-5.003-1.369l-.358-.213-3.743.902.937-3.65-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.431 0 9.818 4.388 9.818 9.818 0 5.431-4.387 9.818-9.818 9.818z"></path></svg>
+    WhatsApp
+  </a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <video id="hero-video" autoplay="" muted="" loop="" playsinline="" preload="auto" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow" id="heroEyebrow" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <span class="dot"></span>
+        Mumbai's Premium Driving School
+      </div>
+      <h1 class="hero-h1" id="heroH1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        Learn Driving<br>
+        With <span class="accent">Confidence</span><br>
+        &amp; Safety
+      </h1>
+      <p class="hero-sub" id="heroSub" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        Expert instructors. Safe vehicles. Flexible timings.<br>
+        We don't just teach you to drive — we build you into a confident, responsible driver for life.
+      </p>
+      <div class="hero-btns" id="heroBtns" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#contact" class="btn-primary">
+          Book Driving Class
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+        </a>
+        <a href="tel:+919876543210" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.27-.84a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          Contact Now
+        </a>
+      </div>
+    </div>
+    <div class="hero-right" id="heroRight" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="hero-card hero-card-float1">
+        <div class="hero-card-icon green">⭐</div>
+        <div>
+          <div class="hero-card-label">Student Rating</div>
+          <div class="hero-card-val">4.9/5.0</div>
+          <div class="hero-stars">
+            <span>★★★★★</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card hero-card-float2">
+        <div class="hero-card-icon blue">🏆</div>
+        <div>
+          <div class="hero-card-label">Experience</div>
+          <div class="hero-card-val">15+ Years</div>
+          <div class="hero-card-sub">Trusted Since 2009</div>
+        </div>
+      </div>
+      <div class="hero-card hero-card-float3">
+        <div class="hero-card-icon gold">🛡️</div>
+        <div>
+          <div class="hero-card-label">Training Safety</div>
+          <div class="hero-card-val">100%</div>
+          <div class="hero-card-sub">Zero accident record</div>
+        </div>
+      </div>
+      <div class="hero-card hero-card-float1">
+        <div class="hero-card-icon green">📅</div>
+        <div>
+          <div class="hero-card-label">Timings</div>
+          <div class="hero-card-val">Flexible</div>
+          <div class="hero-card-sub">6 AM – 10 PM daily</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" style="opacity: 1;">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+    <div class="section-tag">Why Trust Us</div>
+    <h2 class="section-h2">Built on Safety.<br>Driven by Excellence.</h2>
+    <p class="section-sub">Every number represents a promise we keep with every student who walks through our doors.</p>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="trust-card-icon" style="background:#E3F2FD">🎓</div>
+      <div class="trust-card-num">12+</div>
+      <div class="trust-card-label">Certified Instructors</div>
+    </div>
+    <div class="trust-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="trust-card-icon" style="background:#A8E6CF40">🚗</div>
+      <div class="trust-card-num">5000+</div>
+      <div class="trust-card-label">Students Trained</div>
+    </div>
+    <div class="trust-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="trust-card-icon" style="background:#FFF9E1">🛡️</div>
+      <div class="trust-card-num">100%</div>
+      <div class="trust-card-label">Safe Vehicles</div>
+    </div>
+    <div class="trust-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="trust-card-icon" style="background:#E3F2FD">📅</div>
+      <div class="trust-card-num">7 Days</div>
+      <div class="trust-card-label">Flexible Schedule</div>
+    </div>
+    <div class="trust-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="trust-card-icon" style="background:#A8E6CF40">✅</div>
+      <div class="trust-card-num">97%</div>
+      <div class="trust-card-label">Success Rate</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid" style="max-width:1300px;margin:0 auto">
+    <div class="about-visual reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="about-img-accent"></div>
+      <div class="about-img-main">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 120 Q50 80 100 100 Q150 120 170 80" stroke="#2D3436" stroke-width="3" fill="none" stroke-linecap="round"></path>
+          <rect x="60" y="85" width="80" height="50" rx="16" fill="#2D3436" opacity="0.15"></rect>
+          <rect x="70" y="75" width="60" height="30" rx="10" fill="#2D3436" opacity="0.1"></rect>
+          <circle cx="75" cy="138" r="14" fill="#2D3436" opacity="0.2"></circle>
+          <circle cx="125" cy="138" r="14" fill="#2D3436" opacity="0.2"></circle>
+        </svg>
+      </div>
+      <div class="about-img-badge">
+        <div class="about-img-badge-num">15+</div>
+        <div class="about-img-badge-label">Years of Excellence</div>
+      </div>
+    </div>
+    <div class="about-text reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Our Story</div>
+      <h2 class="about-h2">More Than a<br>Driving School.</h2>
+      <p class="about-p">Prashant Driving School was founded in 2009 with one mission: to make every student a confident, safe, and responsible driver. Over 15 years, we've trained thousands of students across Mumbai and built a reputation for quality, patience, and results.</p>
+      <p class="about-p">Our team of certified instructors doesn't just teach traffic rules — we build your instincts, your confidence, and your respect for road safety. Whether you're a complete beginner or looking to sharpen your skills, we have a program designed for you.</p>
+      <div class="about-divider"></div>
+      <div class="about-feats">
+        <div class="about-feat">
+          <div class="about-feat-icon">🎓</div>
+          <div>
+            <div class="about-feat-title">Government Certified</div>
+            <div class="about-feat-desc">RTO approved &amp; licensed institute</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">👩‍🏫</div>
+          <div>
+            <div class="about-feat-title">Patient Instructors</div>
+            <div class="about-feat-desc">Calm, encouraging, professional</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">🚗</div>
+          <div>
+            <div class="about-feat-title">Modern Vehicles</div>
+            <div class="about-feat-desc">Dual-control cars for safety</div>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="about-feat-icon">📍</div>
+          <div>
+            <div class="about-feat-title">Pickup &amp; Drop</div>
+            <div class="about-feat-desc">From your home or office</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="courses-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Our Programs</div>
+      <h2 class="section-h2">A Course for<br>Every Driver.</h2>
+      <p class="section-sub">Structured, proven learning paths tailored to your experience and goals.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">01</div>
+          <div class="course-icon" style="background:#E3F2FD">🚗</div>
+          <div class="course-title">Beginner Lessons</div>
+          <div class="course-desc">Start from zero with complete basics — controls, signals, and safe road habits taught step by step by our patient experts.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">15 – 20 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">02</div>
+          <div class="course-icon" style="background:#A8E6CF40">🏎️</div>
+          <div class="course-title">Advanced Training</div>
+          <div class="course-desc">Master lane discipline, highway confidence, city traffic navigation, and precision driving for experienced learners.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">8 – 12 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">03</div>
+          <div class="course-icon" style="background:#FFF9E1">👩</div>
+          <div class="course-title">Women Special Training</div>
+          <div class="course-desc">Tailored program with female instructors available. Comfortable, safe, and empowering learning environment.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">12 – 18 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">04</div>
+          <div class="course-icon" style="background:#E3F2FD">🛣️</div>
+          <div class="course-title">Highway Practice</div>
+          <div class="course-desc">Gain real-world confidence on expressways. Speed management, overtaking, and emergency handling.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">4 – 6 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">05</div>
+          <div class="course-icon" style="background:#A8E6CF40">🅿️</div>
+          <div class="course-title">Parking Mastery</div>
+          <div class="course-desc">Parallel parking, reverse parking, and tight-space maneuvering. Never dread a parking spot again.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">3 – 5 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+      <div class="course-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="course-card-top">
+          <div class="course-num">06</div>
+          <div class="course-icon" style="background:#FFF9E1">🔄</div>
+          <div class="course-title">Refresher Courses</div>
+          <div class="course-desc">Been off the road for a while? Rebuild your confidence with a customized refresher program at your own pace.</div>
+        </div>
+        <div class="course-card-bottom">
+          <div class="course-duration">5 – 8 sessions</div>
+          <div class="course-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="why-bg-glow"></div>
+  <div class="why-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-h2">The Prashant<br>Difference.</h2>
+      <p class="section-sub">We've built every process around one goal: making you a driver you're proud to be.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-left">
+        <div class="why-item reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <div class="why-item-num">01</div>
+          <div>
+            <div class="why-item-title">Personalised Learning Path</div>
+            <div class="why-item-desc">No cookie-cutter schedules. We assess your current skill level and build a custom plan that gets you road-ready faster.</div>
+          </div>
+        </div>
+        <div class="why-item reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <div class="why-item-num">02</div>
+          <div>
+            <div class="why-item-title">Dual-Control Safety Vehicles</div>
+            <div class="why-item-desc">All training cars are equipped with instructor-side controls. Learn with total peace of mind, no matter your skill level.</div>
+          </div>
+        </div>
+        <div class="why-item reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <div class="why-item-num">03</div>
+          <div>
+            <div class="why-item-title">RTO License Assistance</div>
+            <div class="why-item-desc">We handle the paperwork, test preparation, and accompany you on your RTO test day. End-to-end support.</div>
+          </div>
+        </div>
+        <div class="why-item reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <div class="why-item-num">04</div>
+          <div>
+            <div class="why-item-title">Transparent Pricing</div>
+            <div class="why-item-desc">No hidden charges. Clear, upfront packages with no surprise fees — ever.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right">
+        <div class="why-stats">
+          <div class="why-stat reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <div class="why-stat-num" style="opacity: 1; transform: scale(1);">5000</div>
+            <div class="why-stat-label">Students trained and on the road confidently</div>
+          </div>
+          <div class="why-stat reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <div class="why-stat-num" style="opacity: 1; transform: scale(1);">97%</div>
+            <div class="why-stat-label">First-attempt RTO test pass rate</div>
+          </div>
+          <div class="why-stat reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <div class="why-stat-num" style="opacity: 1; transform: scale(1);">15</div>
+            <div class="why-stat-label">Years of proven excellence in Mumbai</div>
+          </div>
+          <div class="why-stat reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <div class="why-stat-num" style="opacity: 1; transform: scale(1);">5</div>
+            <div class="why-stat-label">Average Google rating from verified students</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Our Gallery</div>
+      <h2 class="section-h2">Training.<br>On Every Road.</h2>
+      <p class="section-sub">Real training sessions. Real students. Real confidence built every day.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g-blue reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🚗</div>
+        <div class="gallery-overlay"><div class="gallery-label">City Training</div></div>
+      </div>
+      <div class="gallery-item g-green reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🛣️</div>
+        <div class="gallery-overlay"><div class="gallery-label">Highway Session</div></div>
+      </div>
+      <div class="gallery-item g-gold reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🏆</div>
+        <div class="gallery-overlay"><div class="gallery-label">RTO Success</div></div>
+      </div>
+      <div class="gallery-item g-mint reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">👩‍🏫</div>
+        <div class="gallery-overlay"><div class="gallery-label">Expert Instructors</div></div>
+      </div>
+      <div class="gallery-item g-warm reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🅿️</div>
+        <div class="gallery-overlay"><div class="gallery-label">Parking Practice</div></div>
+      </div>
+      <div class="gallery-item g-slate reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🚦</div>
+        <div class="gallery-overlay"><div class="gallery-label">Traffic Navigation</div></div>
+      </div>
+      <div class="gallery-item g-sky reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="gallery-inner">🌅</div>
+        <div class="gallery-overlay"><div class="gallery-label">Morning Batch</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testi-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Student Stories</div>
+      <h2 class="section-h2">Trusted by<br>Thousands.</h2>
+      <p class="section-sub">Real words from real students who drove away with confidence.</p>
+    </div>
+    <div class="testi-slider" id="testiSlider">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">I was terrified of driving. After just 3 weeks with Prashant Driving School, I cleared my RTO test on the first attempt. The instructors are incredibly patient and professional.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#A8E6CF,#7ED4B5)">P</div>
+          <div>
+            <div class="testi-name">Priya Sharma</div>
+            <div class="testi-role">Software Engineer, Andheri</div>
+            <div class="testi-stars"><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">The dual-control car gave me so much confidence as a beginner. I never felt scared. The instructor Ravi sir was calm, experienced, and genuinely helpful throughout.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#E3F2FD,#90CAF9)">A</div>
+          <div>
+            <div class="testi-name">Arjun Mehta</div>
+            <div class="testi-role">Business Analyst, Bandra</div>
+            <div class="testi-stars"><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">As a woman learning to drive, I needed a safe and comfortable environment. The women's batch here is excellent. I now drive to work every single day with full confidence.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#FFF9E1,#FFE082)">S</div>
+          <div>
+            <div class="testi-name">Sneha Kulkarni</div>
+            <div class="testi-role">Doctor, Powai</div>
+            <div class="testi-stars"><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">I had my license for years but was too scared to drive in Mumbai traffic. The refresher course completely transformed my confidence. Highly recommended to anyone!</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#A8E6CF,#4DB6AC)">R</div>
+          <div>
+            <div class="testi-name">Rahul Desai</div>
+            <div class="testi-role">Marketing Manager, Thane</div>
+            <div class="testi-stars"><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">The pickup from my home was a game-changer. The flexible morning slots fit perfectly around my college schedule. Best decision I made before getting my license.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#E3F2FD,#64B5F6)">K</div>
+          <div>
+            <div class="testi-name">Kavita Nair</div>
+            <div class="testi-role">College Student, Dadar</div>
+            <div class="testi-stars"><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" id="testiPrev">←</button>
+      <button class="testi-btn" id="testiNext">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- VEHICLES -->
+<section id="vehicles">
+  <div class="vehicles-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Our Fleet</div>
+      <h2 class="section-h2">Modern. Safe.<br>Maintained.</h2>
+      <p class="section-sub">Our training vehicles are serviced regularly and equipped with dual controls for your safety.</p>
+    </div>
+    <div class="vehicles-grid">
+      <div class="vehicle-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="vehicle-visual">🚗</div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Maruti Swift</div>
+          <div class="vehicle-type">Hatchback · Manual &amp; Automatic</div>
+          <div class="vehicle-tags">
+            <span class="vehicle-tag">Dual Controls</span>
+            <span class="vehicle-tag">AC</span>
+            <span class="vehicle-tag">Beginner Friendly</span>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="vehicle-visual" style="background:linear-gradient(135deg,#FFF9E1,#FFE082)">🚙</div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Hyundai i20</div>
+          <div class="vehicle-type">Premium Hatchback · Manual</div>
+          <div class="vehicle-tags">
+            <span class="vehicle-tag">Dual Controls</span>
+            <span class="vehicle-tag">Advanced</span>
+            <span class="vehicle-tag">City Focus</span>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-card reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="vehicle-visual" style="background:linear-gradient(135deg,#A8E6CF,#81C995)">🏎️</div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Honda City</div>
+          <div class="vehicle-type">Sedan · Automatic</div>
+          <div class="vehicle-tags">
+            <span class="vehicle-tag">Dual Controls</span>
+            <span class="vehicle-tag">Highway</span>
+            <span class="vehicle-tag">Premium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-h2">Questions<br>Answered.</h2>
+      <p class="section-sub">Everything you need to know before you start your journey with us.</p>
+    </div>
+    <div style="margin-top:56px">
+      <div class="faq-item">
+        <button class="faq-q">How many sessions does it take to learn driving?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Most beginners become road-ready in 15–20 sessions. This varies based on your learning pace and prior comfort with vehicles. We never rush the process — your safety and confidence always come first.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you offer home pickup for training sessions?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes! We offer pickup from your home or office for your convenience. Our instructors arrive at your doorstep at the scheduled time so you don't have to worry about commuting to a centre.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I learn on an automatic car?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Absolutely. We have both manual and automatic training vehicles available. If you'd prefer to learn automatic first and later transition to manual, we can design a program for that too.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you help with RTO license testing?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes, we provide end-to-end RTO assistance — from paperwork to test preparation. Our instructors will accompany you on your RTO test day and prepare you for exactly what to expect.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What are your class timings?<span class="faq-icon">+</span></button>
+        <div class="faq-a">We operate 7 days a week from 6:00 AM to 10:00 PM. You can choose any slot that fits your schedule — mornings, evenings, or weekends. We work around your life, not the other way around.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is there a special batch for women?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Yes. We have a dedicated women's training program with trained instructors who ensure a comfortable, empowering environment. Female instructor availability is also offered on request.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="section-center reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-h2">Ready to Start?<br>Let's Talk.</h2>
+      <p class="section-sub">Book your first session today. No pressure, just a friendly conversation about your goals.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-val">+91 98765 43210</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📧</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val">info@prashantdriving.com</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-val">Andheri West, Mumbai — 400 053</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🕐</div>
+          <div>
+            <div class="contact-info-label">Hours</div>
+            <div class="contact-info-val">Mon – Sun: 6:00 AM – 10:00 PM</div>
+          </div>
+        </div>
+        <div class="contact-map">
+          📍
+          <div class="contact-map-label">📍 Andheri West, Mumbai</div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input class="form-input" type="text" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input class="form-input" type="tel" placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Course Interested In</label>
+            <select class="form-select">
+              <option value="">Select a course…</option>
+              <option>Beginner Lessons</option>
+              <option>Advanced Training</option>
+              <option>Women Special Training</option>
+              <option>Highway Practice</option>
+              <option>Parking Mastery</option>
+              <option>Refresher Course</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Timing</label>
+            <select class="form-select">
+              <option value="">Select timing…</option>
+              <option>Early Morning (6–9 AM)</option>
+              <option>Morning (9 AM–12 PM)</option>
+              <option>Afternoon (12–4 PM)</option>
+              <option>Evening (4–8 PM)</option>
+              <option>Night (8–10 PM)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message (Optional)</label>
+            <textarea class="form-textarea" rows="3" placeholder="Any specific questions or requirements…"></textarea>
+          </div>
+          <button class="form-submit">
+            Book My Class
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </button>
+          <a href="https://wa.me/919876543210?text=Hi!%20I%27m%20interested%20in%20joining%20Prashant%20Driving%20School." class="wa-btn" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 0C5.373 0 0 5.373 0 12c0 2.14.564 4.144 1.549 5.88L0 24l6.305-1.519A11.959 11.959 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.813 9.813 0 01-5.003-1.369l-.358-.213-3.743.902.937-3.65-.234-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.431 0 9.818 4.388 9.818 9.818 0 5.431-4.387 9.818-9.818 9.818z"></path></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--nature-green);display:inline-block;box-shadow:0 0 12px rgba(168,230,207,.6)"></span>
+        Prashant Driving School
+      </div>
+      <div class="footer-brand-desc">Mumbai's most trusted driving school since 2009. We build confident, safe, and responsible drivers for the roads of tomorrow.</div>
+      <div class="footer-socials">
+        <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#" class="footer-social">f</a>
+        <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#" class="footer-social">in</a>
+        <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#" class="footer-social">▶</a>
+        <a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#" class="footer-social">📸</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Courses</div>
+      <ul class="footer-links">
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Beginner Lessons</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Advanced Training</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Women Special</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Highway Practice</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Parking Mastery</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#courses">Refresher Course</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#about">About Us</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#testimonials">Reviews</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#vehicles">Our Fleet</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#faq">FAQ</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+        <li><a href="mailto:info@prashantdriving.com">info@prashantdriving.com</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#">Andheri West, Mumbai</a></li>
+        <li><a href="file:///C:/Users/Aditya/Desktop/DRIVING%20SCHOOL/files/prashant-driving-school.html#">Mon – Sun: 6AM – 10PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Prashant Driving School. All rights reserved.</div>
+    <div class="footer-badge">
+      <span class="footer-badge-dot"></span>
+      Crafted with care in Mumbai
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── GSAP SETUP ───
+gsap.registerPlugin(ScrollTrigger);
+
+// ─── NAVBAR SCROLL ───
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY > 60) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+},{passive:true});
+
+// ─── HERO ANIMATIONS ───
+const tl = gsap.timeline({delay:.3});
+tl.to('#heroEyebrow',{opacity:1,y:0,duration:.8,ease:'power3.out'})
+  .to('#heroH1',{opacity:1,y:0,duration:.9,ease:'power3.out'},'-=.5')
+  .to('#heroSub',{opacity:1,y:0,duration:.8,ease:'power3.out'},'-=.6')
+  .to('#heroBtns',{opacity:1,y:0,duration:.7,ease:'power3.out'},'-=.5')
+  .to('#heroRight',{opacity:1,x:0,duration:.9,ease:'power3.out'},'-=.7');
+
+// ─── GSAP PARALLAX ON HERO VIDEO ───
+gsap.to('#hero-video',{
+  yPercent:20,
+  ease:'none',
+  scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}
+});
+
+// ─── REVEAL ON SCROLL ───
+gsap.utils.toArray('.reveal').forEach((el,i)=>{
+  gsap.fromTo(el,
+    {opacity:0,y:40},
+    {opacity:1,y:0,duration:.85,ease:'power3.out',
+     scrollTrigger:{trigger:el,start:'top 85%',toggleActions:'play none none none'}}
+  );
+});
+
+// ─── HERO SCROLL INDICATOR ───
+gsap.to('.hero-scroll',{
+  opacity:0,
+  scrollTrigger:{trigger:'#hero',start:'20% top',end:'40% top',scrub:true}
+});
+
+// ─── FAQ ACCORDION ───
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  });
+});
+
+// ─── TESTIMONIAL SLIDER ───
+const slider = document.getElementById('testiSlider');
+const cardW = 380 + 24;
+document.getElementById('testiNext').onclick=()=>{slider.scrollBy({left:cardW,behavior:'smooth'})};
+document.getElementById('testiPrev').onclick=()=>{slider.scrollBy({left:-cardW,behavior:'smooth'})};
+
+// ─── MOBILE MENU ───
+const mobileMenu = document.getElementById('mobileMenu');
+document.getElementById('hamburger').onclick=()=>mobileMenu.classList.add('open');
+document.getElementById('menuClose').onclick=()=>mobileMenu.classList.remove('open');
+function closeMobile(){mobileMenu.classList.remove('open')}
+
+// ─── MAGNETIC BUTTONS ───
+document.querySelectorAll('.btn-primary,.btn-ghost,.form-submit,.wa-btn').forEach(btn=>{
+  btn.addEventListener('mousemove',e=>{
+    const r = btn.getBoundingClientRect();
+    const x = e.clientX - r.left - r.width/2;
+    const y = e.clientY - r.top - r.height/2;
+    btn.style.transform = `translate(${x*.12}px,${y*.12}px)`;
+  });
+  btn.addEventListener('mouseleave',()=>{btn.style.transform=''});
+});
+
+// ─── SECTION STAGGER (trust cards) ───
+gsap.utils.toArray('.trust-card').forEach((card,i)=>{
+  gsap.fromTo(card,{opacity:0,y:30},
+    {opacity:1,y:0,duration:.6,delay:i*.1,ease:'power2.out',
+     scrollTrigger:{trigger:'#trust',start:'top 75%'}
+    }
+  );
+});
+
+// ─── COURSE CARDS STAGGER ───
+gsap.utils.toArray('.course-card').forEach((card,i)=>{
+  gsap.fromTo(card,{opacity:0,y:40,scale:.97},
+    {opacity:1,y:0,scale:1,duration:.7,delay:i*.12,ease:'power3.out',
+     scrollTrigger:{trigger:'#courses',start:'top 70%'}
+    }
+  );
+});
+
+// ─── GALLERY PARALLAX ───
+gsap.utils.toArray('.gallery-item').forEach((item,i)=>{
+  gsap.fromTo(item,{opacity:0,y:30+i*5},
+    {opacity:1,y:0,duration:.7,delay:i*.08,ease:'power2.out',
+     scrollTrigger:{trigger:'#gallery',start:'top 75%'}
+    }
+  );
+});
+
+// ─── WHY STATS COUNTER ───
+gsap.utils.toArray('.why-stat-num').forEach(el=>{
+  ScrollTrigger.create({
+    trigger:el,start:'top 85%',once:true,
+    onEnter:()=>{
+      el.style.opacity='1';
+      gsap.from(el,{textContent:0,duration:1.5,ease:'power2.out',
+        snap:{textContent:1},
+        onUpdate:function(){el.style.transform='scale(1)'}
+      });
+    }
+  });
+});
+
+// ─── SMOOTH SECTION TRANSITIONS ───
+gsap.utils.toArray('section').forEach(sec=>{
+  gsap.fromTo(sec,{},{
+    scrollTrigger:{trigger:sec,start:'top bottom',end:'top 60%',scrub:.5}
+  });
+});
+</script>
+
+
+</body></html>
